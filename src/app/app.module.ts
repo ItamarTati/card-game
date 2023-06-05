@@ -8,6 +8,7 @@ import { ErenYaegerComponent } from './eren-yaeger/eren-yaeger.component';
 import { MikasaAckermanComponent } from './mikasa-ackerman/mikasa-ackerman.component';
 import { KnifeComponent } from './knife/knife.component';
 import { BoardComponent } from './board/board.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { BoardComponent } from './board/board.component';
     BoardComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

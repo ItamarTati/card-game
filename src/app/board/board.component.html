@@ -1,1 +1,51 @@
-<p>board works!</p>
+<div class="container">
+    <div class="top">
+        <app-cpu-deck></app-cpu-deck>
+        <div class="card">
+            <h3>kidnapper 1</h3>
+            <p>This is a simple card.</p>
+            <p>ATK {{ kidnapper1.attack }} HLT {{ kidnapper1.health }}</p>
+        </div>
+        <div class="card">
+            <h3>Kidnapper 2</h3>
+            <p>This is a simple card.</p>
+            <p>ATK {{ kidnapper2.attack }} HLT {{ kidnapper2.health }}</p>
+        </div>
+        <div class="card">
+            <h3>Kidnapper 3</h3>
+            <p>This is a simple card.</p>
+            <p> ATK {{ kidnapper3.attack }} HLT {{ kidnapper3.health }}</p>
+        </div>
+    </div>
+    <div class="middle">
+        <button (click)="endTurn()">End Turn</button>
+    </div>
+    <div class="bottom">
+        <app-user-deck></app-user-deck>
+        <div class="card" (click)="toggleDropdown()">
+            <h3>Eren</h3>
+            <p>This is a simple card.</p>
+            <p>ENG {{eren.energy}}</p>
+            <p>HLT {{eren.health}}</p>
+        </div>
+        <div class="dropdown" *ngIf="showDropdown">
+            <ul>
+                <li><button (click)="attackKidnapper1()">Attack Kidnapper 1</button></li>
+                <li><button (click)="attackKidnapper2()">Attack Kidnapper 2</button></li>
+                <li><button (click)="attackKidnapper3()">Attack Kidnapper 3</button></li>
+                <li><button>Rally Mikasa</button></li>
+            </ul>
+        </div>
+        <div class="card" (click)="toggleDropdown()">
+            <h3>Mikasa</h3>
+            <p>This is a simple card.</p>
+        </div>
+        <div class="dropdown" *ngIf="showDropdown">
+            <ul>
+                <li><button>Attack Kidnapper 1</button></li>
+                <li><button>Attack Kidnapper 2</button></li>
+                <li><button>Attack Kidnapper 3</button></li>
+            </ul>
+        </div>
+    </div>
+</div>
