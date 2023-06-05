@@ -24,7 +24,8 @@ export class AppComponent {
         Agility: 25,
         Intelligence: 10,
         Luck: 100,
-        health: 100
+        health: 100,
+        Regeneration: 10
       },
       AttackTitans: {
         Height: '15 m',
@@ -34,7 +35,8 @@ export class AppComponent {
         Agility: 0,
         Intelligence: 10,
         Luck: 35,
-        health: 1000
+        health: 1000,
+        Regeneration: 100
       }
     },
     Relatives: ['Grisha Yeager', 'Carla Yeager', 'Zeke Yeager',
@@ -50,6 +52,18 @@ export class AppComponent {
     Grade: 'A'
   }
 
+  
+  public kidNappper = {
+    AttackDamage: 500,
+    Defence: 50,
+    Stamina: 10,
+    Agility: 0,
+    Intelligence: 50,
+    Luck: 50,
+    health: 100,
+    Regeneration: 10
+  }
+
   public cardPureTitan = {
     AttackDamage: 250,
     Defence: 50,
@@ -57,7 +71,8 @@ export class AppComponent {
     Agility: 0,
     Intelligence: 0,
     Luck: 0,
-    health: 250
+    health: 250,
+    Regeneration: 100
   }
 
 }
