@@ -1,0 +1,21 @@
+.start-page {
+    background: url("../../assets/starting.gif") no-repeat center center fixed;
+    background-color: #cccccc;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    font-family: 'Pixel', sans-serif;
+    font-size: 24px;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  }
+  
+  .outline {
+    -webkit-text-stroke: 1px black;
+    -webkit-text-fill-color: white;
+  }

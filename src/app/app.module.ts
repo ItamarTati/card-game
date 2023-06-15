@@ -14,6 +14,8 @@ import { EffectsModule } from '@ngrx/effects';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { CardReducer } from './store/card.reducer';
 import { CardEffects } from './store/card.effects';
+import { StartPageComponent } from './start-page/start-page.component';
+import { StartButtonComponent } from './start-button/start-button.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { CardEffects } from './store/card.effects';
     ErenYaegerComponent,
     MikasaAckermanComponent,
     KnifeComponent,
-    BoardComponent
+    BoardComponent,
+    StartPageComponent,
+    StartButtonComponent
   ],
   imports: [
     BrowserModule,
