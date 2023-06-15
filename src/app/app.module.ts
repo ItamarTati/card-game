@@ -16,6 +16,7 @@ import { CardReducer } from './store/card.reducer';
 import { CardEffects } from './store/card.effects';
 import { StartPageComponent } from './start-page/start-page.component';
 import { StartButtonComponent } from './start-button/start-button.component';
+import { StoryComponent } from './story/story.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { StartButtonComponent } from './start-button/start-button.component';
     KnifeComponent,
     BoardComponent,
     StartPageComponent,
-    StartButtonComponent
+    StartButtonComponent,
+    StoryComponent
   ],
   imports: [
     BrowserModule,
