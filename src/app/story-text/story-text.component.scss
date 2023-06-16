@@ -21,11 +21,12 @@ $reset-shadow-color:  #8C2022;
     font-size: 30px;
     padding: 20px;
     width: 1000px;
-    margin-bottom: 80px;
     font-family: 'Press Start 2P', cursive;
     text-decoration: none; 
     color: white;
     box-shadow: inset (-$shadow-width) (-$shadow-width) 0px 0px $shadow-color;
+    cursor: pointer;
+
 
     &:hover,
     &:focus {

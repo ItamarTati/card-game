@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-story-text',
@@ -19,6 +20,21 @@ export class StoryTextComponent {
     "And so, dear adventurer, the story of Arin's thrilling journey to the Lost Temple comes to an end, yet his legend lives on in the hearts of those who dare to follow in his footsteps and embrace the power of the cards. Are you ready to embark on your own extraordinary adventure? The choice is yours."
   ];
 
-  public selectedText: string = this.storyText[0]
+  public index: number = 0;
+  
+  public selectedText: string = this.storyText[this.index];
+
+  constructor(private router: Router) {}
+
+
+  public next(): void {
+    console.log(this.index)
+    if(this.index > this.storyText.length - 2) {
+      this.router.navigate(['/board']);
+    } else {
+      this.index++
+      this.selectedText = this.storyText[this.index]
+    }
+  }
 
 }

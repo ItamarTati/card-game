@@ -24,6 +24,7 @@ $reset-shadow-color:  #8C2022;
     text-decoration: none; 
     color: white;
     box-shadow: inset (-$shadow-width) (-$shadow-width) 0px 0px $shadow-color;
+    cursor: pointer;
 
     &:hover,
     &:focus {

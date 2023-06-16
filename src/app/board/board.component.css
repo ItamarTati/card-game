@@ -4,6 +4,9 @@
     justify-content: space-between;
     align-items: center;
     height: 90vh;
+    background: url("../../assets/board.gif") no-repeat center center fixed;
+    background-color: #050202;
+
   }
   
   .top, .bottom {
