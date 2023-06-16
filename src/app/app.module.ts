@@ -17,6 +17,7 @@ import { CardEffects } from './store/card.effects';
 import { StartPageComponent } from './start-page/start-page.component';
 import { StartButtonComponent } from './start-button/start-button.component';
 import { StoryComponent } from './story/story.component';
+import { StoryTextComponent } from './story-text/story-text.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { StoryComponent } from './story/story.component';
     BoardComponent,
     StartPageComponent,
     StartButtonComponent,
-    StoryComponent
+    StoryComponent,
+    StoryTextComponent
   ],
   imports: [
     BrowserModule,
